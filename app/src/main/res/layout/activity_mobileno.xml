@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context=".Mobileno"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/textViewCovidQuaraTracker"
+        android:layout_width="320dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/covid_19_qurantine_tracker"
+        android:textColor="#020202"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUserid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    // BACKGROUND OF BUTTON IS IN DRAWABLE : BUTTON_BACK
+    <Button
+        android:id="@+id/buttonGetOTPpassword"
+        android:layout_width="311dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="355dp"
+        android:background="@drawable/button_back"
+        android:onClick="getotppassword"
+        android:text="@string/get_otp_password"
+        android:textColor="#F6F0F0"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUserid"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextUserid"
+        android:layout_width="320dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="@string/user_id"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonGetOTPpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCovidQuaraTracker" />
+
+    <ImageView
+        android:id="@+id/imageViewnetprophets"
+        android:layout_width="174dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginRight="164dp"
+        android:layout_marginBottom="39dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCovidQuaraTracker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/netprophets"
+        tools:ignore="ContentDescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

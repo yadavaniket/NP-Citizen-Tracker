@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">NP Citizen Tracker</string>
+    <string name="set_your_quarantine_location">Set your Quarantine Location</string>
+    <string name="please_mark_the_location_where_you_are_quarantined_this_infomation_will_be_used_by_the_health_worker_to_track_your_progress">Please mark the location where you are quarantined. This information will be used by the health worker to track your progress.</string>
+    <string name="login">Login</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="enter_6_digit_code_to_verify_your_Email_Id">Enter 6 digit code to verify your Email Id</string>
+    <string name="get_otp_password">Get OTP Password</string>
+    <string name="covid_19_qurantine_tracker">COVID-19 Qurantine Tracker</string>
+    <string name="enterotp">Enter OTP</string>
+    <string name="save">Save</string>
+    <string name="to_complete_the_proccess_please_enter_the_otp_recieved_by_your_health_worker">To complete the process please enter the OTP received by your health worker.</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="update_status">Update Status</string>
+    <string name="category">Category</string>
+    <string name="name">Name</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="attached_health_worker">Attached Health worker</string>
+    <string name="gender">Gender</string>
+    <string name="address">Address</string>
+    <string name="quarantine_violation_till_now">Quarantine Violation Till Now</string>
+    <string name="do_you_have_of_these_symptoms">Do you have of these symptoms?</string>
+    <string name="temperature">Temperature</string>
+    <string name="submit">Submit</string>
+    <string name="tiredness">Tiredness</string>
+    <string name="breathing">Breathing</string>
+    <string name="fever">Fever</string>
+    <string name="cough">Cough</string>
+    <string name="password">Password</string>
+    <string name="user_id">User ID</string>
+    <string name="logout">Logout</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+
+    <string-array name="choose_Location">
+        <item>Home</item>
+        <item>Office</item>
+        <item>Quarantine Center</item>
+
+    </string-array>
+</resources>

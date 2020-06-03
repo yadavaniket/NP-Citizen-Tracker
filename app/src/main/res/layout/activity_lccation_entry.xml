@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationEntry"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/imageViewLocation"
+        android:layout_width="122dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginBottom="15dp"
+        android:background="#00F6F1F1"
+        app:layout_constraintBottom_toTopOf="@+id/textViewLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/location"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="339dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/please_mark_the_location_where_you_are_quarantined_this_infomation_will_be_used_by_the_health_worker_to_track_your_progress"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSetLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLocation" />
+
+    // BACKGROUND OF BUTTON IS IN DRAWABLE : BUTTON_BACK
+    <Button
+        android:id="@+id/buttonSetLocation"
+        android:layout_width="311dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="205dp"
+        android:background="@drawable/button_back"
+        android:onClick="SetYourQuarantineLocation"
+        android:text="@string/set_your_quarantine_location"
+        android:textColor="#FAF9F9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLocation"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

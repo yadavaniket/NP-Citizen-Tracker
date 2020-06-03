@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/textViewenterotp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="83dp"
+        android:layout_marginBottom="11dp"
+        android:text="@string/enter_otp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/textViewcode"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/enter_6_digit_code_to_verify_your_Email_Id"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewenterotp" />
+
+    // BACKGROUND OF BUTTON IS IN DRAWABLE : BUTTON_BACK
+    <Button
+        android:id="@+id/buttonlogin"
+        android:layout_width="262dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_back"
+        android:onClick="login"
+        android:text="@string/login"
+        android:textColor="#FAF3F3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewresend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextcode" />
+
+    <TextView
+        android:id="@+id/textViewresend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="292dp"
+        android:onClick="resendotp"
+        android:text="@string/resend_otp"
+        android:textColor="#1124FB"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonlogin" />
+
+    <EditText
+        android:id="@+id/editTextcode"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/buttonlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewcode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTPByWorkers"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/textViewenterotpbyworker"
+        android:layout_width="121dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="19dp"
+        android:text="@string/enter_otp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewcodebyworker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewcodebyworker"
+        android:layout_width="334dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="25dp"
+        android:padding="5sp"
+        android:text="@string/to_complete_the_proccess_please_enter_the_otp_recieved_by_your_health_worker"
+        android:textColor="#CD000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextenterotpbyworker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewenterotpbyworker" />
+
+    <EditText
+        android:id="@+id/editTextenterotpbyworker"
+        android:layout_width="331dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewcodebyworker"
+        tools:ignore="LabelFor" />
+
+    // BACKGROUND OF BUTTON IS IN DRAWABLE : BUTTON_BACK
+    <Button
+        android:id="@+id/buttonverifyotp"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="328dp"
+        android:background="@drawable/button_back"
+        android:onClick="VerifyOTP"
+        android:text="@string/verify_otp"
+        android:textColor="#F6F1F1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewtimer" />
+
+    <TextView
+        android:id="@+id/textViewtimer"
+        android:layout_width="57dp"
+        android:layout_height="27dp"
+        android:text="00:59"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonverifyotp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextenterotpbyworker" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
